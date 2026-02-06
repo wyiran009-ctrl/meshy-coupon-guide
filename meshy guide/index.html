@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meshy Pro: Exclusive Coupon Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #050507; }
+        .bg-glow-lime { background: radial-gradient(circle, rgba(163, 230, 53, 0.1) 0%, transparent 70%); }
+        .bg-glow-blue { background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%); }
+        
+        /* 图片放大过渡效果 */
+        .img-zoom-container img {
+            transition: transform 0.3s ease;
+        }
+        .img-zoom-container:hover img {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="text-slate-200 selection:bg-lime-500/30">
+
+    <!-- 背景装饰光晕 -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-glow-lime blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-glow-blue blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- 图片放大模态框 (Modal) -->
+    <div id="image-modal" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 md:p-12 cursor-zoom-out">
+        <div class="relative max-w-5xl w-full h-full flex items-center justify-center">
+            <img id="modal-img" src="" alt="Zoomed view" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl">
+            <button class="absolute top-0 right-0 m-4 text-white/50 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-12">
+        <!-- Logo & Header -->
+        <header class="flex flex-col items-center text-center mb-20">
+            <img 
+                src="meshy 6.png" 
+                alt="Meshy Logo" 
+                class="h-24 md:h-28 mb-8 object-contain drop-shadow-[0_0_15px_rgba(163,230,53,0.3)] hover:scale-105 transition-transform duration-500 cursor-pointer"
+                onerror="this.src='https://via.placeholder.com/200x80?text=Meshy+Logo'"
+            >
+            <div class="h-1 w-24 bg-gradient-to-r from-transparent via-lime-500 to-transparent mb-8"></div>
+            <h1 class="text-3xl md:text-5xl font-black text-white tracking-tight mb-4 uppercase">
+                Exclusive <span class="text-lime-400">Coupon Guide</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-xl">
+                Follow these <span class="text-white font-bold">4 simple steps</span> to activate your custom creator discount and unlock your Pro benefits.
+            </p>
+        </header>
+
+        <!-- Steps Grid -->
+        <div id="steps-container" class="space-y-24">
+            <!-- Step 1 -->
+            <section class="relative group">
+                <div class="absolute -top-10 -left-4 text-7xl font-black text-white/[0.03] select-none italic">1</div>
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-500/30 bg-slate-900/50 text-white text-sm font-bold uppercase tracking-wider">
+                            <i data-lucide="trash-2" class="w-5 h-5 text-red-400"></i> Step 1
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-white leading-tight group-hover:text-lime-400 transition-colors">Remove the Default Offer</h2>
+                        <p class="text-slate-400 leading-relaxed text-base md:text-lg">Currently, Meshy has a default 50% off promotion for all new users. To use your specific creator coupon, you must first click the "Remove Coupon" button at the bottom of the pricing page.</p>
+                    </div>
+                    <div class="md:col-span-7">
+                        <div class="img-zoom-container relative rounded-3xl overflow-hidden border border-white/10 bg-[#0d0d12] shadow-2xl transition-all duration-500 group-hover:border-lime-500/50 cursor-zoom-in">
+                            <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-40"></div>
+                            <div class="relative p-2">
+                                <div class="flex items-center gap-1.5 px-4 py-2 border-b border-white/5 bg-black/20">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-green-500/40"></div>
+                                </div>
+                                <img src="1.jpg" alt="Step 1" class="w-full h-auto rounded-b-xl" onerror="this.src='https://via.placeholder.com/800x450?text=Step+1+Image'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2 -->
+            <section class="relative group">
+                <div class="absolute -top-10 -left-4 text-7xl font-black text-white/[0.03] select-none italic">2</div>
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-lime-500/30 bg-slate-900/50 text-white text-sm font-bold uppercase tracking-wider">
+                            <i data-lucide="mouse-pointer-2" class="w-5 h-5 text-lime-400"></i> Step 2
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-white leading-tight group-hover:text-lime-400 transition-colors">Select Pro Monthly Plan</h2>
+                        <p class="text-slate-400 leading-relaxed text-base md:text-lg">Once the default offer is removed, locate the Pro plan (designed for individual creators). Ensure the toggle is set to Billed monthly and click "Subscribe Now" on the Pro card.</p>
+                    </div>
+                    <div class="md:col-span-7">
+                        <div class="img-zoom-container relative rounded-3xl overflow-hidden border border-white/10 bg-[#0d0d12] shadow-2xl transition-all duration-500 group-hover:border-lime-500/50 cursor-zoom-in">
+                            <div class="absolute inset-0 bg-gradient-to-br from-lime-500/10 to-transparent opacity-40"></div>
+                            <div class="relative p-2">
+                                <div class="flex items-center gap-1.5 px-4 py-2 border-b border-white/5 bg-black/20">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-green-500/40"></div>
+                                </div>
+                                <img src="2.jpg" alt="Step 2" class="w-full h-auto rounded-b-xl" onerror="this.src='https://via.placeholder.com/800x450?text=Step+2+Image'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3 -->
+            <section class="relative group">
+                <div class="absolute -top-10 -left-4 text-7xl font-black text-white/[0.03] select-none italic">3</div>
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-slate-900/50 text-white text-sm font-bold uppercase tracking-wider">
+                            <i data-lucide="ticket" class="w-5 h-5 text-purple-400"></i> Step 3
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-white leading-tight group-hover:text-lime-400 transition-colors">Enter Your Promo Code</h2>
+                        <p class="text-slate-400 leading-relaxed text-base md:text-lg">On the checkout page, look at the subtotal section on the left. Click the button labeled "Add promotion code" and paste your unique coupon code into the field.</p>
+                    </div>
+                    <div class="md:col-span-7">
+                        <div class="img-zoom-container relative rounded-3xl overflow-hidden border border-white/10 bg-[#0d0d12] shadow-2xl transition-all duration-500 group-hover:border-lime-500/50 cursor-zoom-in">
+                            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-40"></div>
+                            <div class="relative p-2">
+                                <div class="flex items-center gap-1.5 px-4 py-2 border-b border-white/5 bg-black/20">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-green-500/40"></div>
+                                </div>
+                                <img src="3.jpg" alt="Step 3" class="w-full h-auto rounded-b-xl" onerror="this.src='https://via.placeholder.com/800x450?text=Step+3+Image'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 4 -->
+            <section class="relative group">
+                <div class="absolute -top-10 -left-4 text-7xl font-black text-white/[0.03] select-none italic">4</div>
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-slate-900/50 text-white text-sm font-bold uppercase tracking-wider">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-400"></i> Step 4
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-white leading-tight group-hover:text-lime-400 transition-colors">Verify and Subscribe</h2>
+                        <p class="text-slate-400 leading-relaxed text-base md:text-lg">After applying the code, the total amount will update instantly. Review the new total, then click "Subscribe" to unlock your Pro features and start creating.</p>
+                    </div>
+                    <div class="md:col-span-7">
+                        <div class="img-zoom-container relative rounded-3xl overflow-hidden border border-white/10 bg-[#0d0d12] shadow-2xl transition-all duration-500 group-hover:border-lime-500/50 cursor-zoom-in">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-40"></div>
+                            <div class="relative p-2">
+                                <div class="flex items-center gap-1.5 px-4 py-2 border-b border-white/5 bg-black/20">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-green-500/40"></div>
+                                </div>
+                                <img src="4.jpg" alt="Step 4" class="w-full h-auto rounded-b-xl" onerror="this.src='https://via.placeholder.com/800x450?text=Step+4+Image'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Support Section -->
+        <footer class="mt-32 pt-16 border-t border-white/5 flex flex-col items-center text-center space-y-6">
+            <div class="p-6 rounded-3xl bg-[#111115] border border-white/5 max-w-md shadow-xl">
+                <div class="flex items-start gap-4 text-left">
+                    <div class="w-12 h-12 rounded-2xl bg-lime-500/10 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="help-circle" class="w-6 h-6 text-lime-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-1">Need Assistance?</h4>
+                        <p class="text-sm text-slate-400">If you encounter any issues during the checkout process, please contact the Meshy Marketing Team directly.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 移除原有的 Contact Marketing Team 按钮 -->
+
+            <p class="text-xs text-slate-600 font-medium tracking-[0.3em] uppercase pt-12">
+                Meshy AI © 2026 • Empowering 3D Creators
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // 初始化 Lucide 图标
+        lucide.createIcons();
+
+        // 处理图片放大逻辑
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        
+        // 选取步骤中的所有图片进行绑定
+        const zoomableImages = document.querySelectorAll('.img-zoom-container img');
+
+        zoomableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                modalImg.src = img.src;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // 禁用滚动
+            });
+        });
+
+        // 点击模态框背景关闭
+        modal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // 恢复滚动
+        });
+    </script>
+</body>
+</html>
